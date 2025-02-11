@@ -16,7 +16,7 @@ A simple yet powerful Chrome extension to set price alerts for stocks and forex 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/price-alert-extension.git
+git clone https://github.com/Shahriar-008/Market-Alert-Extension.git
 cd price-alert-extension
 ```
 
