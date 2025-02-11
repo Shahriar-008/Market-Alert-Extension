@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Market Price Alerts",
+  "version": "1.2",
+  "description": "Simple and clean price alert extension for stocks and forex pairs using the Alpha Vantage API.",
+  "permissions": [
+    "notifications",
+    "storage",
+    "alarms",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "https://www.alphavantage.co/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["offscreen.html", "alert.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

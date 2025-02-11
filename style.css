@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 14px;
+}
+
+.tab-button.active {
+  background: #5563DE;
+  color: #fff;
+  font-weight: 500;
+}
+
+.tab-button:not(:last-child) {
+  border-right: none;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #5563DE;
+  padding-bottom: 5px;
+  text-align: center;
+  color: #333;
+}
+
+#alert-form {
+  margin-bottom: 20px;
+}
+
+#alert-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#alert-form button {
+  width: 100%;
+  padding: 10px;
+  background: #5563DE;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#alert-form button:hover {
+  background: #434BB8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+li.triggered {
+  background: #ffebee;
+  border-color: #f44336;
+}
+
+.alert-info {
+  flex: 1;
+  margin-right: 10px;
+}
+
+li button {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+li button:hover {
+  background: #d32f2f;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Alpha Vantage Price Alerts</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Include Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+    <h1>Price Alerts</h1>
+    <div class="tabs">
+      <button class="tab-button active" data-tab="manage">Manage Alerts</button>
+      <button class="tab-button" data-tab="history">History</button>
+    </div>
+    <div id="manage" class="tab-content active">
+      <div id="alert-form">
+        <h2>Set New Alert</h2>
+        <input type="text" id="symbol" placeholder="Symbol (e.g. EUR/USD, AAPL)" />
+        <input type="number" id="targetPrice" placeholder="Target Price" step="0.0001" />
+        <button id="addAlert">Add Alert</button>
+      </div>
+      <div id="active-alerts">
+        <h2>Active Alerts</h2>
+        <ul id="activeAlerts"></ul>
+      </div>
+    </div>
+    <div id="history" class="tab-content">
+      <h2>Triggered Alerts History</h2>
+      <ul id="triggeredAlerts"></ul>
+    </div>
+    <!-- Audio element to play the alert sound -->
+    <audio id="alertSound" src="alert.mp3"></audio>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
